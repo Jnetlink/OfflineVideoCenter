@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="idn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="icon" type="image/x-icon" href="C:\Users\User\Downloads/favicon.png"
+>
+    <title>Offline Video Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .video-container {
+            margin-bottom: 20px;
+        }
+        .video-player {
+            width: 80%; /* Lebar pemutar video */
+            margin: 0 auto;
+        }
+        .video-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .video-list-item {
+            margin: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .video-list-item video {
+            width: 100%;
+            max-width: 300px; /* Lebar maksimum video dalam daftar */
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+      <h1 style="color: red;">Nonton Offline</h1>
+
+    <!-- Daftar Video -->
+    <div class="video-list" id="videoList">
+        <div class="video-list-item" onclick="playMainVideo('video1.mp4')">
+            <h3>Video 1</h3>
+            <video controls>
+                <source src="C:\Users\User\Downloads\Video/Julian Permana's Video - Apr 6, 2024 (online-video-cutter.com).mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video.
+            </video>
+        </div>
+        <div class="video-list-item" onclick="playMainVideo('video2.mp4')">
+            <h3>Video 2</h3>
+            <video controls>
+                <source src="C:\Users\User\Downloads\Video/Jkt48-Rapsodi (Lyrics song) watermark.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video.
+            </video>
+        </div>
+        <div class="video-list-item" onclick="playMainVideo('video3.mp4')">
+            <h3>Video 3</h3>
+            <video controls>
+                <source src="C:\Users\User\Downloads\Video/Eurika Milik Kita (Bokura No Eurika) Jkt48-Lirik Vidio.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video.
+            </video>
+        </div>
+<div class="video-list-item" onclick="playMainVideo('video3.mp4')">
+            <h3>Video 4</h3>
+            <video controls>
+                <source src="C:\Users\User\Downloads\Video/Eurika Milik Kita (Bokura No Eurika) Jkt48-Lirik Vidio.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video.
+            </video>
+        </div>
+
+       <div class="video-list-item" onclick="playMainVideo('video3.mp4')">
+            <h3>Video 5</h3>
+            <video controls>
+                <source src="C:\Users\User\Downloads\Video/Eurika Milik Kita (Bokura No Eurika) Jkt48-Lirik Vidio.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video.
+            </video>
+        </div>
+     <div class="video-list-item" onclick="playMainVideo('video3.mp4')">
+            <h3>Video 6</h3>
+            <video controls>
+                <source src="C:\Users\User\Downloads\Video/Eurika Milik Kita (Bokura No Eurika) Jkt48-Lirik Vidio.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video.
+            </video>
+        </div>
+   <div class="video-list-item" onclick="playMainVideo('video3.mp4')">
+            <h3>Video 7</h3>
+            <video controls>
+                <source src="C:\Users\User\Downloads\Video/Eurika Milik Kita (Bokura No Eurika) Jkt48-Lirik Vidio.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video.
+            </video>
+        </div> 
+ <div class="video-list-item" onclick="playMainVideo('video3.mp4')">
+            <h3>Video 8</h3>
+            <video controls>
+                <source src="C:\Users\User\Downloads\Video/Eurika Milik Kita (Bokura No Eurika) Jkt48-Lirik Vidio.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video.
+            </video>
+        </div>
+
+        <!-- Tambahkan video lainnya dengan format yang sama -->
+    </div>
+
+    <script>
+        function playMainVideo(videoSrc) {
+            var mainVideoContainer = document.getElementById('mainVideoContainer');
+            var mainVideoPlayer = document.getElementById('mainVideoPlayer');
+
+            // Menampilkan pemutar video besar
+            mainVideoContainer.style.display = 'block';
+
+            // Mengatur sumber video dan memulai pemutaran
+            mainVideoPlayer.src = videoSrc;
+            mainVideoPlayer.load();
+            mainVideoPlayer.play();
+
+            // Gulir ke atas agar pemutar video utama terlihat
+            mainVideoContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
+ 
+<div class="copyright">
+        &copy; 2024 Jnet.id. All rights reserved.
+    </div>
+
+</body> 
+</html>
+
+
+
+       
